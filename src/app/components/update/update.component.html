@@ -1,0 +1,55 @@
+<div class="modal-content ">
+    <div class="modal-header ">
+      <h2 class="modal-title" id="exampleModalLabel">{{ title }}</h2>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+         (click)="dismiss()"
+      ></button>
+    </div>
+    <div class="modal-body">
+        <div class="container">
+           <form (ngSubmit)="onUpdate()" [formGroup]="updateForm">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">First name</label>
+                    <input type="text" 
+                    class="form-control" 
+                    formControlName="first_name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                    <input type="text" 
+                        formControlName="last_name"
+                        class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email"
+                    formControlName="email"
+                    class="form-control"  
+                   >
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Gender</label>
+                    <select class="form-select" formControlName="gender" aria-label="Default select example">
+                        <option value="" disabled>Select gender </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Salary</label>
+                    <input type="number" 
+                    class="form-control" 
+                    formControlName="salary"
+                    placeholder="$">
+                </div>
+                <button type="submit" class="btn btn-primary ">Update</button>
+           </form>
+        </div>
+    </div>
+  </div>
+
+  
