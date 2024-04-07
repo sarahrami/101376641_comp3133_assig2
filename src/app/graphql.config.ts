@@ -1,1 +1,1 @@
-export const myUrl = "http://localhost:4000/graphql"
+export const myUrl = "https://vivacious-duck-sombrero.cyclic.app"
