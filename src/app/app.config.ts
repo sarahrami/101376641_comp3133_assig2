@@ -28,6 +28,6 @@ export const appConfig: ApplicationConfig = {
       }),
       deps: [HttpLink]
     },
-    Apollo
+    Apollo, provideAnimationsAsync()
   ]
 };
